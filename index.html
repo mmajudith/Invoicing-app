@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Invoice Application</title>
+</head>
+<body>
+    <div class="app-container">
+
+        <header>
+            <h1>Dashboard</h1>
+            <div class="plus-wrapper">
+                <img src="./assets/plus-white.png" alt="plus icon"/>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="Invoices-wrapper">
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Search...">
+                </div>
+                
+                <div class="invoices">
+                    <h2>Invoices - 54</h2>
+
+                    <ul>
+                        <li class="active">
+                            <div class="width">
+                                <p class="flex">
+                                    <span class="white">INV. # - 1122</span>
+                                    <span class="time">11:35AM - Today</span>
+                                </p>
+                                <p class="white">Items - 05</p>
+                                <p class="flex">
+                                    <span class="name">Naveen Ravindran</span>
+                                    <span class="price">&#8377;3,509</span>
+                                </p>
+                            </div>    
+                        </li>
+                        <li>
+                            <div class="width">
+                                <p class="flex">
+                                    <span class="gray">INV. # - 1122</span>
+                                    <span class="time">11:35AM - Today</span>
+                                </p>
+                                <p class="gray">Items - 03</p>
+                                <p class="flex">
+                                    <span class="non-active-name">Jept Paul Alapat</span>
+                                    <span class="non-active-price">&#8377;1240</span>
+                                </p>
+                            </div>    
+                        </li>
+                        <li>
+                            <div class="width">
+                                <p class="flex">
+                                    <span class="gray">INV. # - 1120</span>
+                                    <span class="time">11:35AM - Today</span>
+                                </p>
+                                <p class="gray">Items - 19</p>
+                                <p class="flex">
+                                    <span class="gray">Unknown User</span>
+                                    <span class="non-active-price">&#8377;3960</span>
+                                </p>
+                            </div>    
+                        </li>
+                    </ul>
+                    <li>
+                        <div class="width">
+                            <p class="flex">
+                                <span class="gray">INV. # - 1119</span>
+                                <span class="time">11:35AM - Today</span>
+                            </p>
+                            <p class="gray">Items - 07</p>
+                            <p class="flex">
+                                <span class="non-active-name">Jose Kutten baby kan...</span>
+                                <span class="non-active-price">&#8377;2340</span>
+                            </p>
+                        </div>    
+                    </li>
+                    <li>
+                        <div class="width">
+                            <p class="flex">
+                                <span class="gray">INV. # - 1118</span>
+                                <span class="time">11:35AM - Today</span>
+                            </p>
+                            <p class="gray">Items - 07</p>
+                            <p class="flex">
+                                <span class="gray">Unknown User</span>
+                                <span class="non-active-price">&#8377;2340</span>
+                            </p>
+                        </div>    
+                    </li>
+                    <li>
+                        <div class="width">
+                            <p class="flex">
+                                <span class="gray">INV. # - 1117</span>
+                                <span class="time">11:35AM - Today</span>
+                            </p>
+                            <p class="gray">Items - 07</p>
+                            <p class="flex">
+                                <span class="gray">Unknown User</span>
+                                <span class="non-active-price">&#8377;2340</span>
+                            </p>
+                        </div>    
+                    </li>
+                    <li>
+                        <div class="width">
+                            <p class="flex">
+                                <span class="gray">INV. # - 1116</span>
+                                <span class="time">11:35AM - Today</span>
+                            </p>
+                            <p class="gray">Items - 07</p>
+                            <p class="flex">
+                                <span class="non-active-name">John Doe sylvester stal...</span>
+                                <span class="non-active-price">&#8377;2340</span>
+                            </p>
+                        </div>    
+                    </li>
+                    <li>
+                        <div class="width">
+                            <p class="flex">
+                                <span class="gray">INV. # - 1115</span>
+                                <span class="time">11:35AM - Today</span>
+                            </p>
+                            <p class="gray">Items - 07</p>
+                            <p class="flex">
+                                <span class="gray">Unknown User</span>
+                                <span class="non-active-price">&#8377;2340</span>
+                            </p>
+                        </div>    
+                    </li>
+                </div>
+                
+            </section>
+
+            <section class="Invoice-details">
+                <h3>Invoice Details</h3>
+
+                <div class="details">
+                    <div class="addreess-wrapper">
+                        <div class="invoice-no">
+                            <p class="dark">Invoice</p>
+                            <p class="size"># INV1122</p>
+                            <p>11:35AM - Today</p>
+                        </div>
+                        <div class="customer-details">
+                            <div class="detail">
+                                <p>Customer Details</p>
+                                <p class="name">John Doe</p>
+                                <p>johndoe@serviceprovider.com</p>
+                            </div>
+                            <div class="printer-wrapper">
+                                <span>Print</span><img src="./assets/printer-blue.png" alt="printer"/>
+                            </div>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Quantity</th>
+                                <th>Price - &#8377;</th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td>Prawn & Chicken Sui Mai</td>
+                                <td>2</td>
+                                <td>430.00</td>
+                            </tr>
+                            <tr>
+                                <td>Long Product Name With Two Lines</td>
+                                <td>1</td>
+                                <td>670.00</td>
+                            </tr>
+                            <tr>
+                                <td>Prawn & Chicken Sui Mai</td>
+                                <td>3</td>
+                                <td>430.00</td>
+                            </tr>
+                            <tr>
+                                <td>Long Product Name With Two Lines</td>
+                                <td>6</td>
+                                <td>1670.00</td>
+                            </tr>
+                            <tr>
+                                <td>Long Product Name With Two Lines</td>
+                                <td>2</td>
+                                <td>270.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="total-wrapper">
+                        <p>
+                            <span>Sub Total</span>
+                            <span class="weight">&#8377;3470</span>
+                        </p>
+                        <p>
+                            <span>Tax(12.36%)</span>
+                            <span class="weight">&#8377;429</span>
+                        </p>
+                        <p>
+                            <span class="margin">Discount(10%)</span>
+                            <span class="weight">&#8377;-390</span>
+                        </p>
+                        <p>
+                            <span class="weight">Grand Total</span>
+                            <span class="weight">&#8377;3509</span>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+</body>
+</html>
