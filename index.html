@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./newInvAdd.css">
+    <link rel="stylesheet" href="./newInvProduct.css">
     <title>Invoice Application</title>
 </head>
 <body>
@@ -194,23 +195,35 @@
                         </div>
                     </div>
                     <div class="proceed">
-                        <button>Proceed</button>
+                        <button type="button" class="proceed-btn">Proceed</button>
                     </div>
                 </form>
             </div>
         </div>
 
         <div class="new-invoice-products">
-            <div class="">
-                <div>
-                    <img src="./assets/close-btn.png" alt="close button icon"/>
+            <div class="products">
+                <div class="close-wrapper">
+                    <img src="./assets/close-btn.png" alt="close button icon" class="close-product"/>
                 </div>
-                <div>
-                    <p>
-                       <span>Create New Invoice</span>
-                       <span>Order No: 1234</span>
-                       <p>Product Details</p>
-                    </p>   
+                <div class="flex">
+                    <div class="address-flex">
+                        <p>
+                            <span>Create New Invoice</span>
+                            <span class="right">Order No: 1234</span>
+                         </p> 
+                         <p class="pg-tp">Product Details</p> 
+                    </div>
+                    <div class="right-flex">
+                        <div class="">
+                            <p class="gray">Customer Details</p>
+                            <p class="black">John Doe</p>
+                            <p class="gray">johndoe@serviceprovider.com</p>
+                        </div>
+                        <div class="edit-wrapper">
+                            <img src="./assets/edit.png" alt="edit icon" class="edit"/>
+                        </div>
+                    </div>   
                 </div>
                 <table>
                     <thead>
@@ -230,22 +243,48 @@
                 </table>
 
                 <form>
-                    <div>
-                        <input type="type" placeholder="Please enter Item Name">
-                        <input type="number" placeholder="0.00">
-                        <input type="number" placeholder="0.00">
-                        <img src="./assets/enter-icon.png" alt="enter icon"/>
+                    <div class="product-values">
+                        <input type="type" placeholder="Please enter Item Name" class="item">
+                        <input type="number" placeholder="0.00" class="quan">
+                        <input type="number" placeholder="0.00" class="price">
+                        <div class="enter-wrapper">
+                            <img src="./assets/enter-icon.png" alt="enter icon" class="enter"/>
+                        </div>
                     </div>
-                    <div>
-                        <div>
-                            <input type="number" placeholder="0.00">
-                            <input type="number" placeholder="0.00">
+                    <div class="subTotal">
+                        <div class="dis-tax-wrapper">
+                            <input type="number" placeholder="Tax" class="tax">
+                            <input type="number" placeholder="Discount" class="discount">
                         </div>
-                        <div>
+                        <div class="totals-wrapper">
                             <span>Sub Total</span>
-                            <span>&#8377; 430</span>
+                            <span class="weight">&#8377; 430</span>
                         </div>
-                    </div>   
+                    </div> 
+                    <div class="grandTotal">
+                        <div class="right">
+                            <div class="">
+                                <p>Tax</p>
+                                <p>&#8377; 0.00</p>
+                            </div>
+                            <div class="">
+                                <p>Discount</p>
+                                <p>&#8377; 0.00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="left">
+                            <div>
+                                <p>Grand Total</p>
+                                <p class="grand">&#8377; 430</p>
+                            </div>
+                            
+                            <div class="save-button">
+                                <button type="submit" class="save">Save</button>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </form>
             </div>
         </div>

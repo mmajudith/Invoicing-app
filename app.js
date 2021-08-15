@@ -1,9 +1,16 @@
 'use strict';
 
+// Varible declarations
 let invoiceDetails = document.querySelector('.details');
 let createInvoice = document.querySelector('.plus-wrapper');
-let InvoiceAddress = document.querySelector('.new-invoice-address');
+let invoiceAddress = document.querySelector('.new-invoice-address');
 let closeAddress = document.querySelector('.close');
+let closeProduct = document.querySelector('.close-product');
+let invoiceProduct = document.querySelector('.new-invoice-products')
+let proceed = document.querySelector('.proceed-btn')
+let skipAddress = document.querySelector('.skip-wrapper')
+let editInvoiceAddress = document.querySelector('.edit')
+let saveInvoice = document.querySelector('.save')
 
 //Generated Invoice Details
 
@@ -97,10 +104,45 @@ generatedInvoice(invoiceData)
 
 //Clicking on the plus icon to create invoice
 createInvoice.addEventListener('click', (e) => {
-    InvoiceAddress.style.display = 'block'
+    invoiceAddress.style.display = 'block';
+
+});
+
+
+//Clicking on the close icon to close invoice address
+closeAddress.addEventListener('click', (e) => {
+    invoiceAddress.style.display = 'none';
+});
+
+
+//Clicking on the skip icon to skip invoice address
+skipAddress.addEventListener('click', (e) => {
+    invoiceAddress.style.display = 'none';
+    invoiceProduct.style.display = 'block';
+});
+
+
+//Clicking on the proceed button to proceed to next form
+proceed.addEventListener('click', (e) => {
+    e.preventDefault();
+    invoiceProduct.style.display = 'block';
+    invoiceAddress.style.display = 'none';
+});
+
+
+//Clicking on the close icon to close invoice products
+closeProduct.addEventListener('click', (e)=>{
+    invoiceProduct.style.display = 'none';
+    invoiceAddress.style.display = 'none';
 })
 
-//Clicking on the close icon to close invoice
-closeAddress.addEventListener('click', (e) => {
-    InvoiceAddress.style.display = 'none'
+//Clicking on the edit icon to edit the customers address
+editInvoiceAddress.addEventListener('click', (e)=>{
+    invoiceProduct.style.display = 'none';
+    invoiceAddress.style.display = 'block';
 })
+
+saveInvoice.addEventListener('click', (e) => {
+    e.preventDefault();
+    
+});
