@@ -258,51 +258,51 @@ li {
 	text-transform: uppercase;
 }
 
-table {
+main table {
 	width: 95%;
 	height: 100%;
 	margin: 20px auto;
 	border-collapse: collapse;
 }
 
-table th {
+main table th {
 	color: hsl(215, 12%, 74%);
 	text-transform: uppercase;
 	border-top: 1px solid hsl(215, 12%, 74%);
 	border-bottom: 1px solid hsl(215, 12%, 74%);
 }
 
-table th:first-child {
+main table th:first-child {
 	padding: 10px 30px;
 	text-align: left;
 }
 
-table th:last-child {
+main table th:last-child {
 	text-align: right;
 	padding: 10px 0px;
 	padding-right: 3%;
 }
 
-table th:nth-child(2) {
+main table th:nth-child(2) {
 	padding: 10px 0px;
 	text-align: center;
 }
 
-table tbody tr td {
+main table tbody tr td {
 	border-bottom: 1px solid hsl(204, 23.8%, 95.9%);
 }
 
-table tbody tr td:first-child {
+main table tbody tr td:first-child {
 	padding: 15px 30px;
 	text-align: left;
 }
 
-table tbody tr td:nth-child(2) {
+main table tbody tr td:nth-child(2) {
 	padding: 15px 0px;
 	text-align: center;
 }
 
-table tbody tr td:last-child {
+main table tbody tr td:last-child {
 	text-align: right;
 	padding: 15px 0px;
 	padding-right: 3%;
@@ -330,4 +330,8 @@ table tbody tr td:last-child {
 
 .total-wrapper p .weight {
 	font-weight: 600;
+}
+
+.save {
+	display: none;
 }

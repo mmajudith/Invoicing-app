@@ -141,83 +141,118 @@
                 <h3>Invoice Details</h3>
 
                 <div class="details">
-                    <div class="addreess-wrapper">
-                        <div class="invoice-no">
-                            <p class="dark">Invoice</p>
-                            <p class="size"># INV1122</p>
-                            <p>11:35AM - Today</p>
-                        </div>
-                        <div class="customer-details">
-                            <div class="detail">
-                                <p>Customer Details</p>
-                                <p class="name">John Doe</p>
-                                <p>johndoe@serviceprovider.com</p>
-                            </div>
-                            <div class="printer-wrapper">
-                                <span>Print</span><img src="./assets/printer-blue.png" alt="printer"/>
-                            </div>
-                        </div>
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Item</th>
-                                <th>Quantity</th>
-                                <th>Price - &#8377;</th>
-                            </tr>
-                        </thead>
-                        
-                        <tbody>
-                            <tr>
-                                <td>Prawn & Chicken Sui Mai</td>
-                                <td>2</td>
-                                <td>430.00</td>
-                            </tr>
-                            <tr>
-                                <td>Long Product Name With Two Lines</td>
-                                <td>1</td>
-                                <td>670.00</td>
-                            </tr>
-                            <tr>
-                                <td>Prawn & Chicken Sui Mai</td>
-                                <td>3</td>
-                                <td>430.00</td>
-                            </tr>
-                            <tr>
-                                <td>Long Product Name With Two Lines</td>
-                                <td>6</td>
-                                <td>1670.00</td>
-                            </tr>
-                            <tr>
-                                <td>Long Product Name With Two Lines</td>
-                                <td>2</td>
-                                <td>270.00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="total-wrapper">
-                        <p>
-                            <span>Sub Total</span>
-                            <span class="weight">&#8377;3470</span>
-                        </p>
-                        <p>
-                            <span>Tax(12.36%)</span>
-                            <span class="weight">&#8377;429</span>
-                        </p>
-                        <p>
-                            <span class="margin">Discount(10%)</span>
-                            <span class="weight">&#8377;-390</span>
-                        </p>
-                        <p>
-                            <span class="weight">Grand Total</span>
-                            <span class="weight">&#8377;3509</span>
-                        </p>
-                    </div>
+                    
                 </div>
             </section>
 
         </main>
 
+        <div class="">
+            <div class="">
+                <div>
+                    <p>
+                       <span>Create New Invoice</span>
+                       <span>Order No: 1234</span>
+                    </p>
+                
+                    <img src="./assets/close-btn.png" alt="close button icon"/>
+                </div>
+                <div>
+                    <p>Customer Details</p>
+                    <div>
+                        <span>skip</span><img src="./assets/skip-icon.png" alt="skip"/>
+                    </div>
+                </div>
+                <form>
+
+                    <div>
+                        <div>
+                            <label>Full Name<sup>*</sup></label><br>
+                            <input type="text" placeholder="Customer Name"/>
+                        </div>
+                        <div>
+                            <label>Phone Number<sup>*</sup></label><br>
+                            <input type="tel"/>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label>Address</label><br>
+                            <input type="type" placeholder="Complete Address"/>
+                        </div>
+                        <div>
+                            <div>
+                                <label>Email ID<sup>*</sup></label><br>
+                                <input type="email" placeholder="Customer Email Address"/>
+                            </div>
+                            <div>
+                                <label>Pincode</label><br>
+                                <input type="number" placeholder="560067"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="save">
+            <div class="">
+                <div>
+                    <img src="./assets/close-btn.png" alt="close button icon"/>
+                </div>
+                <div>
+                    <p>
+                       <span>Create New Invoice</span>
+                       <span>Order No: 1234</span>
+                       <p>Product Details</p>
+                    </p>
+                
+                    
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Price - &#8377;</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Prawn & Chicken Sui Mai</td>
+                            <td>2.00</td>
+                            <td>430.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <form>
+                    <div>
+                        <input type="type" placeholder="Please enter Item Name">
+                        <input type="number" placeholder="0.00">
+                        <input type="number" placeholder="0.00">
+                        <img src="./assets/enter-icon.png" alt="enter icon"/>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="number" placeholder="0.00">
+                            <input type="number" placeholder="0.00">
+                        </div>
+                        <div>
+                            <span>Sub Total</span>
+                            <span>&#8377; 430</span>
+                        </div>
+                    </div>   
+                </form>
+            </div>
+        </div>
+
     </div>
+    <script src="./data.js"></script> 
+    <script src="./app.js"></script> 
 </body>
 </html>
