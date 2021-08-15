@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./newInvAdd.css">
     <title>Invoice Application</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
         <header>
             <h1>Dashboard</h1>
             <div class="plus-wrapper">
-                <img src="./assets/plus-white.png" alt="plus icon"/>
+                <img src="./assets/plus-white.png" alt="plus icon" class="plus"/>
             </div>
         </header>
 
@@ -147,59 +148,59 @@
 
         </main>
 
-        <div class="">
-            <div class="">
-                <div>
+        <div class="new-invoice-address">
+            <div class="Invoice-address">
+                <div class="address-flex">
                     <p>
                        <span>Create New Invoice</span>
-                       <span>Order No: 1234</span>
+                       <span class="right">Order No: 1234</span>
                     </p>
                 
-                    <img src="./assets/close-btn.png" alt="close button icon"/>
+                    <img src="./assets/close-btn.png" alt="close button icon" class="close"/>
                 </div>
-                <div>
+                <div class="skip">
                     <p>Customer Details</p>
-                    <div>
+                    <div class="skip-wrapper">
                         <span>skip</span><img src="./assets/skip-icon.png" alt="skip"/>
                     </div>
                 </div>
-                <form>
+                <form class="">
 
-                    <div>
-                        <div>
+                    <div class="pho-nam-wrapper">
+                        <div class="full-name-wrapper">
                             <label>Full Name<sup>*</sup></label><br>
-                            <input type="text" placeholder="Customer Name"/>
+                            <input type="text" placeholder="Customer Name" class="input"/>
                         </div>
-                        <div>
+                        <div class="phone-wrapper">
                             <label>Phone Number<sup>*</sup></label><br>
-                            <input type="tel"/>
+                            <input type="tel" class="input"/>
                         </div>
                     </div>
 
-                    <div>
-                        <div>
+                    <div class="address-info">
+                        <div class="address-wrapper">
                             <label>Address</label><br>
-                            <input type="type" placeholder="Complete Address"/>
+                            <textarea placeholder="Complete Address"></textarea>
                         </div>
-                        <div>
-                            <div>
+                        <div class="email-pin-wrapper">
+                            <div class="email-wrapper">
                                 <label>Email ID<sup>*</sup></label><br>
-                                <input type="email" placeholder="Customer Email Address"/>
+                                <input type="email" placeholder="Customer Email Address" class="input"/>
                             </div>
-                            <div>
+                            <div class="pincode-wrapper">
                                 <label>Pincode</label><br>
-                                <input type="number" placeholder="560067"/>
+                                <input type="number" placeholder="560067" class="input"/>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div></div>
+                    <div class="proceed">
+                        <button>Proceed</button>
                     </div>
                 </form>
             </div>
         </div>
 
-        <div class="save">
+        <div class="new-invoice-products">
             <div class="">
                 <div>
                     <img src="./assets/close-btn.png" alt="close button icon"/>
@@ -209,9 +210,7 @@
                        <span>Create New Invoice</span>
                        <span>Order No: 1234</span>
                        <p>Product Details</p>
-                    </p>
-                
-                    
+                    </p>   
                 </div>
                 <table>
                     <thead>

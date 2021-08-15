@@ -1,6 +1,9 @@
 'use strict';
 
 let invoiceDetails = document.querySelector('.details');
+let createInvoice = document.querySelector('.plus-wrapper');
+let InvoiceAddress = document.querySelector('.new-invoice-address');
+let closeAddress = document.querySelector('.close');
 
 //Generated Invoice Details
 
@@ -90,3 +93,14 @@ const generatedInvoice = data =>{
 }
 
 generatedInvoice(invoiceData)
+
+
+//Clicking on the plus icon to create invoice
+createInvoice.addEventListener('click', (e) => {
+    InvoiceAddress.style.display = 'block'
+})
+
+//Clicking on the close icon to close invoice
+closeAddress.addEventListener('click', (e) => {
+    InvoiceAddress.style.display = 'none'
+})

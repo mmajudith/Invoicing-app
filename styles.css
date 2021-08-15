@@ -14,6 +14,7 @@ body {
 	width: 100%;
 	height: 100%;
 	margin: auto auto;
+	position: relative;
 }
 
 /* Header*/
@@ -330,8 +331,4 @@ main table tbody tr td:last-child {
 
 .total-wrapper p .weight {
 	font-weight: 600;
-}
-
-.save {
-	display: none;
 }
