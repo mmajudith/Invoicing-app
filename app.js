@@ -105,6 +105,19 @@ createInvoice.addEventListener('click', (e) => {
     invoiceAddress.style.display = 'block';
 });
 
+//Clicking on the print icon to print your invoice
+printInvoice.addEventListener('click', (e) => {
+
+    let winPrint = window.open('','details', 'width=900,height=650')
+    winPrint.document.open()
+    winPrint.document.write(invoiceDetails.innerHTML)
+    winPrint.document.close()
+    winPrint.document.focus()
+    winPrint.document.print()
+    winPrint.document.close()
+
+});
+
 //Clicking on the close icon to close invoice address
 closeAddress.addEventListener('click', (e) => {
     invoiceAddress.style.display = 'none';
@@ -143,15 +156,3 @@ saveInvoice.addEventListener('click', (e) => {
 
 });
 
-//Clicking on the print icon to print your invoice
-printInvoice.addEventListener('click', (e) => {
-
-    let winPrint = window.open('','details', 'width=900,height=650')
-    winPrint.document.open()
-    winPrint.document.write(invoiceDetails.innerHTML)
-    winPrint.document.close()
-    winPrint.document.focus()
-    winPrint.document.print()
-    winPrint.document.close()
-
-});
