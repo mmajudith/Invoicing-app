@@ -167,12 +167,12 @@
                         <span>skip</span><img src="./assets/skip-icon.png" alt="skip"/>
                     </div>
                 </div>
-                <form class="">
+                <form class="address-form">
 
                     <div class="pho-nam-wrapper">
                         <div class="full-name-wrapper">
                             <label>Full Name<sup>*</sup></label><br>
-                            <input type="text" placeholder="Customer Name" class="input"/>
+                            <input type="text" placeholder="Customer Name" id="full-name" class="input"/>
                         </div>
                         <div class="phone-wrapper">
                             <label>Phone Number<sup>*</sup></label><br>
@@ -188,7 +188,7 @@
                         <div class="email-pin-wrapper">
                             <div class="email-wrapper">
                                 <label>Email ID<sup>*</sup></label><br>
-                                <input type="email" placeholder="Customer Email Address" class="input"/>
+                                <input type="email" placeholder="Customer Email Address" id="email" class="input"/>
                             </div>
                             <div class="pincode-wrapper">
                                 <label>Pincode</label><br>
@@ -219,8 +219,8 @@
                     <div class="right-flex">
                         <div class="">
                             <p class="gray">Customer Details</p>
-                            <p class="black"></p>
-                            <p class="gray"></p>
+                            <p class="black" id="proname"></p>
+                            <p class="gray" id="proemail"></p>
                         </div>
                         <div class="edit-wrapper">
                             <img src="./assets/edit.png" alt="edit icon" class="edit"/>

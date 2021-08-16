@@ -2,16 +2,22 @@
 
 // Varible declarations
 let invoiceDetails = document.querySelector('.details');
+
 let createInvoice = document.querySelector('.plus-wrapper');
 let printInvoice = document.querySelector('.printer-wrapper');
 let invoiceAddress = document.querySelector('.new-invoice-address');
 let closeAddress = document.querySelector('.close');
 let closeProduct = document.querySelector('.close-product');
 let invoiceProduct = document.querySelector('.new-invoice-products')
-let proceed = document.querySelector('.proceed-btn')
-let skipAddress = document.querySelector('.skip-wrapper')
-let editInvoiceAddress = document.querySelector('.edit')
-let saveInvoice = document.querySelector('.save')
+let proceed = document.querySelector('.proceed-btn');
+let skipAddress = document.querySelector('.skip-wrapper');
+let editInvoiceAddress = document.querySelector('.edit');
+let saveInvoice = document.querySelector('.save');
+
+let fullName = document.querySelector('#full-name');
+let email = document.querySelector('#email');
+let customerName = document.querySelector('#proname');
+let customerEmail = document.querySelector('#proemail');
 
 //Generated Invoice Details
 
@@ -136,6 +142,9 @@ proceed.addEventListener('click', (e) => {
     e.preventDefault();
     invoiceProduct.style.display = 'block';
     invoiceAddress.style.display = 'none';
+
+    customerName.innerHTML = fullName.value
+    customerEmail.innerHTML = email.value
 });
 
 
