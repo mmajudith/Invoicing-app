@@ -29,6 +29,7 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	position: relative;
+	z-index: 1;
 }
 
 header h1 {
@@ -185,6 +186,8 @@ li {
 .Invoice-details {
 	width: 77%;
 	background-color: hsl(220, 13%, 95%);
+	position: relative;
+	z-index: 0;
 }
 
 .Invoice-details h3 {
@@ -207,8 +210,7 @@ li {
 }
 
 .Invoice-details .details .addreess-wrapper {
-	width: 95%;
-	margin: auto;
+	width: 82%;
 	padding: 10px 0px;
 	display: flex;
 	flex-direction: row;
@@ -217,6 +219,10 @@ li {
 
 .addreess-wrapper p {
 	margin-bottom: 8px;
+}
+
+.invoice-no {
+	margin-left: 3%;
 }
 
 .addreess-wrapper .invoice-no .dark {
@@ -230,16 +236,24 @@ li {
 }
 
 .addreess-wrapper .customer-details {
+	margin-right: 3%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+.detail {
+	text-align: right;
 }
 
 .addreess-wrapper .customer-details .detail .name {
 	font-weight: 600;
 }
 
-.customer-details .printer-wrapper {
+.printer-wrapper {
+	position: absolute;
+	top: 14%;
+	right: 6%;
 	width: 80px;
 	height: 25px;
 	border-radius: 6px;
@@ -254,7 +268,7 @@ li {
 	font-weight: 600;
 }
 
-.customer-details .printer-wrapper span {
+.printer-wrapper span {
 	margin-top: 5px;
 	text-transform: uppercase;
 }

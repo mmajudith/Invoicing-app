@@ -166,7 +166,7 @@ sup {
 
 @media screen and (max-width: 768px) {
 	.new-invoice-address .Invoice-address {
-		width: 68%;
+		width: 80%;
 		margin: 15vh auto;
 	}
 

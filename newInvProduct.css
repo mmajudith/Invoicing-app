@@ -274,7 +274,7 @@ form {
 
 @media screen and (max-width: 768px) {
 	.new-invoice-products .products {
-		width: 75%;
+		width: 83%;
 		margin: 12vh auto;
 	}
 	.products .flex {
