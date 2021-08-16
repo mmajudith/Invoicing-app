@@ -217,6 +217,7 @@ form {
 
 .totals-wrapper {
 	width: 50%;
+	text-align: right;
 }
 
 .totals-wrapper .weight {
@@ -269,4 +270,130 @@ form {
 
 .grandTotal p {
 	margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+	.new-invoice-products .products {
+		width: 75%;
+		margin: 12vh auto;
+	}
+	.products .flex {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.products .flex .right-flex {
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.address-flex .right {
+		margin-left: 10px;
+		font-size: 13px;
+	}
+
+	.new-invoice-products table th {
+		font-size: 12px;
+	}
+
+	.new-invoice-products table th:first-child {
+		padding: 10px 0px;
+	}
+
+	.new-invoice-products table th:last-child {
+		padding: 10px 0px;
+		padding-right: 0%;
+	}
+
+	.new-invoice-products table tbody tr td:first-child {
+		padding: 15px 0px;
+	}
+
+	.new-invoice-products table tbody tr td:nth-child(2) {
+		padding: 15px 0px;
+	}
+
+	.new-invoice-products table tbody tr td:last-child {
+		padding: 15px 0px;
+		padding-right: 0%;
+	}
+
+	.product-values .item {
+		width: 25%;
+		font-size: 12px;
+	}
+
+	.product-values .quan {
+		width: 20%;
+		padding-left: 2%;
+		font-size: 12px;
+	}
+
+	.product-values .price {
+		padding-left: 2%;
+		width: 15%;
+		font-size: 12px;
+	}
+
+	.product-values .enter-wrapper {
+		width: 13%;
+	}
+
+	.subTotal {
+		width: 90%;
+		margin: 20px auto;
+		padding-top: 60px;
+		padding-bottom: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.dis-tax-wrapper {
+		width: 50%;
+		margin: auto;
+	}
+
+	.dis-tax-wrapper .tax {
+		width: 25%;
+		margin-right: 5px;
+	}
+
+	.totals-wrapper {
+		width: 50%;
+		text-align: right;
+	}
+
+	.totals-wrapper .weight {
+		margin-left: 30px;
+	}
+
+	.grandTotal {
+		width: 100%;
+		padding: 30px 0px;
+		margin: auto;
+		background-color: hsl(210, 13%, 94%);
+		border-radius: 0px 0px 6px 6px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.grandTotal .right {
+		width: 40%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.grandTotal .left {
+		width: 50%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.grandTotal .save-button button {
+		padding: 15px 20px;
+	}
 }

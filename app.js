@@ -3,7 +3,7 @@
 // Varible declarations
 let invoiceDetails = document.querySelector('.details');
 let createInvoice = document.querySelector('.plus-wrapper');
-let printInvoice = document.querySelector('.print');
+let printInvoice = document.getElementsByClassName('.print');
 let invoiceAddress = document.querySelector('.new-invoice-address');
 let closeAddress = document.querySelector('.close');
 let closeProduct = document.querySelector('.close-product');

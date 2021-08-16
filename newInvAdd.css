@@ -161,3 +161,87 @@ sup {
 	font-size: 500;
 	cursor: pointer;
 }
+
+/* Mobile styles */
+
+@media screen and (max-width: 768px) {
+	.new-invoice-address .Invoice-address {
+		width: 68%;
+		margin: 15vh auto;
+	}
+
+	.new-invoice-address .Invoice-address .address-flex p {
+		font-size: 14px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.new-invoice-address .Invoice-address .address-flex .right {
+		margin-left: 15px;
+		margin-top: 5px;
+	}
+
+	.new-invoice-address .Invoice-address .address-flex img {
+		height: 15px;
+	}
+
+	.new-invoice-address .Invoice-address .skip {
+		flex-direction: column;
+	}
+
+	.new-invoice-address .Invoice-address .skip .skip-wrapper {
+		padding: 10px 15px;
+		width: 30%;
+		font-size: 14px;
+		letter-spacing: 1px;
+	}
+
+	.skip .skip-wrapper span {
+		text-transform: uppercase;
+		margin-right: 5px;
+		margin-bottom: 5px;
+	}
+
+	.pho-nam-wrapper,
+	.address-info {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.pho-nam-wrapper .full-name-wrapper {
+		width: 100%;
+	}
+
+	.pho-nam-wrapper .phone-wrapper {
+		width: 100%;
+	}
+
+	.input {
+		padding: 10px 0px;
+		padding-left: 5%;
+		letter-spacing: 1px;
+		font-size: 14px;
+	}
+
+	.address-info .address-wrapper {
+		width: 100%;
+	}
+
+	.address-wrapper textarea {
+		width: 95%;
+		height: 80px;
+		padding: 10px 0px;
+		padding-left: 5%;
+		letter-spacing: 1px;
+		font-size: 14px;
+	}
+
+	.address-info .email-pin-wrapper {
+		width: 100%;
+	}
+
+	.address-info .email-pin-wrapper .pincode-wrapper {
+		width: 40%;
+	}
+}
