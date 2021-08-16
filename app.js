@@ -12,12 +12,15 @@ let invoiceProduct = document.querySelector('.new-invoice-products')
 let proceed = document.querySelector('.proceed-btn');
 let skipAddress = document.querySelector('.skip-wrapper');
 let editInvoiceAddress = document.querySelector('.edit');
+let enterRow = document.querySelector('.enter-wrapper')
 let saveInvoice = document.querySelector('.save');
 
 let fullName = document.querySelector('#full-name');
 let email = document.querySelector('#email');
 let customerName = document.querySelector('#proname');
 let customerEmail = document.querySelector('#proemail');
+let taProductBody = document.querySelector('.table-products-body')
+let productsForm = document.querySelector('.products-form')
 
 //Generated Invoice Details
 
@@ -105,6 +108,18 @@ const generatedInvoice = data =>{
 
 generatedInvoice(invoiceData)
 
+//Adding Item, Quantity and Price Function
+const AddCusProduct = (item, quantity, price) =>{
+    return `
+        <tr>
+            <td>${item}</td>
+            <td>${quantity}</td>
+            <td>${price}</td>
+        </tr>
+    `
+}
+
+
 
 //Clicking on the plus icon to create invoice
 createInvoice.addEventListener('click', (e) => {
@@ -159,6 +174,20 @@ editInvoiceAddress.addEventListener('click', (e)=>{
     invoiceProduct.style.display = 'none';
     invoiceAddress.style.display = 'block';
 })
+
+//Clinking on the Enter icon to enter anther row
+//And also add the item, quantity and price to the row
+enterRow.addEventListener('click', (e) => {
+
+    let item = productsForm.item.value.trim()
+    let quantity = productsForm.quantity.value.trim()
+    let price = productsForm.price.value.trim()
+
+    taProductBody.innerHTML +=  AddCusProduct(item, quantity, price)
+    
+    productsForm.reset()
+
+});
 
 saveInvoice.addEventListener('click', (e) => {
     e.preventDefault();
