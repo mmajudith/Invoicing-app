@@ -183,9 +183,15 @@ enterRow.addEventListener('click', (e) => {
     let quantity = productsForm.quantity.value.trim()
     let price = productsForm.price.value.trim()
 
-    taProductBody.innerHTML +=  AddCusProduct(item, quantity, price)
+    //checking if the product inputs field are empty
+    if(item && quantity && price){
+        taProductBody.innerHTML +=  AddCusProduct(item, quantity, price)
+
+        productsForm.reset()
+    }else{
+        alert("Please input your item, quantity and price")
+    }
     
-    productsForm.reset()
 
 });
 
