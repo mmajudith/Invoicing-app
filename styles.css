@@ -63,7 +63,7 @@ main {
 }
 
 .Invoices-wrapper {
-	width: 30%;
+	width: 23%;
 	height: 100%;
 	margin: auto auto;
 	background-color: hsl(211, 15%, 21%);
@@ -76,19 +76,19 @@ main {
 }
 
 .input-wrapper input {
-	width: 92%;
+	width: 85%;
 	height: 40px;
 	border-radius: 40px;
 	border: none;
 	outline: none;
-	padding-left: 8%;
+	padding-left: 15%;
 	background-color: hsl(211, 15%, 24%);
 	background-image: url(./assets/search-icon.png);
 	background-repeat: no-repeat;
 	background-position: 10px;
 	color: hsl(210, 8%, 48%);
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .input-wrapper input::placeholder {
@@ -183,7 +183,7 @@ li {
 /*Invoice detail styles*/
 
 .Invoice-details {
-	width: 70%;
+	width: 77%;
 	background-color: hsl(220, 13%, 95%);
 }
 

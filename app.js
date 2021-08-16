@@ -3,6 +3,7 @@
 // Varible declarations
 let invoiceDetails = document.querySelector('.details');
 let createInvoice = document.querySelector('.plus-wrapper');
+let printInvoice = document.querySelector('.print');
 let invoiceAddress = document.querySelector('.new-invoice-address');
 let closeAddress = document.querySelector('.close');
 let closeProduct = document.querySelector('.close-product');
@@ -32,7 +33,7 @@ const generatedInvoice = data =>{
                         <p>${email}</p>
                     </div>
                     <div class="printer-wrapper">
-                        <span>Print</span><img src="./assets/printer-blue.png" alt="printer"/>
+                        <span>Print</span><img src="./assets/printer-blue.png" alt="printer" class="print"/>
                     </div>
                 </div>
             </div>
@@ -105,9 +106,7 @@ generatedInvoice(invoiceData)
 //Clicking on the plus icon to create invoice
 createInvoice.addEventListener('click', (e) => {
     invoiceAddress.style.display = 'block';
-
 });
-
 
 //Clicking on the close icon to close invoice address
 closeAddress.addEventListener('click', (e) => {
@@ -144,5 +143,17 @@ editInvoiceAddress.addEventListener('click', (e)=>{
 
 saveInvoice.addEventListener('click', (e) => {
     e.preventDefault();
-    
+
+});
+
+//Clicking on the print icon to print your invoice
+printInvoice.addEventListener('click', (e) => {
+
+    let winPrint = window.open('','details', 'width=900,height=650')
+    winPrint.document.write(invoiceDetails.innerHTML)
+    winPrint.document.close()
+    winPrint.document.focus()
+    winPrint.document.print()
+    winPrint.document.close()
+
 });
